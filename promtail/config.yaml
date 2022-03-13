@@ -16,8 +16,12 @@ options:
   log_level: info
 ports:
   9080/tcp: null
+  514/tcp: null
+  514/udp: null
 ports_description:
   9080/tcp: Promtail web server
+  514/tcp: Syslog TCP
+  514/udp: Syslog UDP
 schema:
   additional_pipeline_stages: str?
   additional_scrape_configs: str?
